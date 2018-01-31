@@ -1,0 +1,5 @@
+.icon-big {
+  @include for-size('all') {
+    font-size: 4em;
+  }
+}

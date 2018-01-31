@@ -1,0 +1,38 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the drawer component.
+// -----------------------------------------------------------------------------
+
+.md-drawer--mini.md-drawer--mini {
+  width: 56px;
+  @include for-size(small) {
+    display: none;
+  }
+}
+
+.md-drawer-relative--mini.md-drawer-relative--mini {
+  margin-left: 56px;
+  @include for-size(small) {
+    margin-left: 0px;
+  }
+}
+
+ul.md-list--drawer > li > a > div > i.md-icon {
+  color: $md-primary-color;
+}
+
+nav.md-background--card {
+  @include smaller-than-size(phone) {
+    max-width: 10em;
+  }
+}
+
+aside.md-drawer--mini.md-drawer--mini {
+  @include smaller-than-size(phone) {
+    display: none;
+  }
+}
+main.md-drawer-relative--mini.md-drawer-relative--mini {
+  @include smaller-than-size(phone) {
+    margin-left: 0;
+  }
+}

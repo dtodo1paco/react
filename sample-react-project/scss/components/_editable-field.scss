@@ -1,0 +1,32 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the drawer component.
+// -----------------------------------------------------------------------------
+
+.editableField {
+  .md-edit-dialog--min-width {
+    min-width: inherit;
+  }
+  .md-table-column {
+    padding: 0.2em;
+  }
+  .md-data-table--plain .md-table-column--data,
+  .md-data-table .md-table-column--plain {
+    padding-bottom: 0px;
+    padding-top: 0px;
+  }
+  .md-edit-dialog--inline .md-text-field-container--input-block {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  .md-text-field-container--input {
+    margin-bottom: 0;
+  }
+  .md-edit-dialog {
+    left: 0;
+    min-height: 0;
+    padding-right: inherit;
+  }
+  @include for-size(small) {
+    background-color: blue;
+  }
+}

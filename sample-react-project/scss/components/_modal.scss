@@ -1,0 +1,24 @@
+
+.modal-dialog {
+  /*
+  position: fixed;
+  top: 50%;
+  right: auto;
+  bottom: auto;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  outline: 0;
+  display: inline-table;
+  */
+}
+.modal-content {
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 56px;
+  /*
+  max-height: 90vh;
+  max-width: 90vw;
+  margin-top: 3em;
+  */
+  /* to leave space to header */
+}

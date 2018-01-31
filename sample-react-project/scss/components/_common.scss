@@ -1,0 +1,47 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the common components.
+// -----------------------------------------------------------------------------
+.alert {
+  background-color: #f48fb1;
+}
+.required-group {
+  color: red;
+}
+.md-snackbar.notification-error{
+  background-color: #f48fb1;
+  p, button {
+    color: black;
+  }
+}
+.md-icon-text {
+  @include for-size(large) {
+    display: none;
+  }
+}
+
+.md-picker {
+  @include smaller-than-size(smallphone) {
+    left: -48%;
+  }
+}
+
+.md-card {
+  /*border: 0.1px solid $md-primary-color;*/
+}
+
+.newDialog {
+  top: 5em !important;
+  min-width: 50% !important;
+  padding-top: 1em;
+  max-height: 100%;
+  overflow-y: auto;
+}
+.header-flex {
+  display: flex !important;
+  padding-top: 0.5em;
+}
+
+
+#no-photo {
+  font-size: 4em;
+}

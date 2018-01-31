@@ -1,0 +1,47 @@
+@charset 'UTF-8';
+
+// 1. Configuration and helpers
+@import
+  'abstracts/variables',
+  'abstracts/functions',
+  'abstracts/mixins';
+
+// 2. Vendors
+@import
+  'vendor/normalize',
+  'vendor/react-md',
+  'vendor/_react-contextmenu.scss';
+
+// 3. Base stuff
+@import
+  'base/base',
+  'base/fonts',
+  'base/typography',
+  'base/helpers';
+
+// 4. Layout-related sections
+@import
+  'layout/header',
+  'layout/footer';
+
+// 5. Components
+@import
+  'components/common',
+  'components/button',
+  'components/drawer',
+  'components/editable-field',
+  'components/file-upload',
+  'components/icons',
+  'components/modal',
+  'components/search-box',
+  'components/search-results',
+  'components/select',
+  'components/tabs';
+
+// 6. Page-specific styles
+@import
+  'pages/home';
+
+// 7. Themes
+@import
+  'themes/default';

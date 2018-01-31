@@ -1,0 +1,10 @@
+/*! react-md.css */
+
+@import './node_modules/react-md/src/scss/react-md';
+
+$md-light-theme: true; // optional for light theme
+$md-primary-color: $md-teal-500;
+$md-secondary-color: $md-light-blue-a-200;
+
+@include react-md-everything;
+

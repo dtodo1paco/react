@@ -1,0 +1,32 @@
+
+
+
+.results-bar {
+  height: 2.3em;
+  display: flex;
+  vertical-align:middle;
+  .md-title {
+    font-size: 0.8em;
+    line-height: 2.3em;
+  }
+  @include smaller-than-size(tablet) {
+    display: inline;
+    button {
+      min-width: initial;
+    }
+    .md-title {
+      font-size: 0.5em;
+    }
+  }
+  div > button {
+    margin-bottom: 0;
+    margin-top: 0;
+    vertical-align: text-bottom;
+  }
+  div > button.results-button {
+    margin-bottom: 0;
+    margin-top: 0;
+    vertical-align: text-bottom;
+  }
+}
+

@@ -1,0 +1,67 @@
+
+.file-inputs__upload-form {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 2em;
+  position: relative;
+
+  &__progress {
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  &__file-upload {
+    flex-shrink: 0;
+  }
+
+  &__file-field {
+    flex-grow: 1;
+    margin-left: $md-default-padding / 2;
+  }
+}
+
+label.md-btn--text {
+  min-width: inherit;
+}
+.input-file {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.no-js + .input-file + label {
+  display: none;
+}
+.input-file + label {
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+}
+.input-file:focus + label {
+  outline: 1px dotted #000;
+  outline: -webkit-focus-ring-color auto 5px;
+}
+.input-file + label * {
+  pointer-events: none;
+}
+.input-file + label img {
+  max-width: 100%;
+  height: auto;
+}
+.file-uploader {
+  display: grid;
+}
+.filename {
+  overflow: hidden;
+  white-space: nowrap; /* Don't forget this one */
+  text-overflow: ellipsis;
+  font-size: 0.8em;
+}

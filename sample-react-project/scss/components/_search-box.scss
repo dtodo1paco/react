@@ -1,0 +1,70 @@
+.search-box,
+.search-wrapper {
+  position: relative;
+  width: 100%;
+  padding: 0.5em;
+  @include smaller-than-size(tablet) {
+    padding: 0em;
+  }
+}
+.search-wrapper {
+  form {
+    margin: 0;
+    input {
+      height: 2.5em;
+      @include for-size(phone) {
+        height: 2em;
+      }
+    }
+    button {
+      padding: 2px;
+      @include for-size(phone) {
+        height: 2.2em;
+      }
+    }
+  }
+  @include for-size(phone) {
+    width: auto;
+  }
+}
+.search-box {
+  width: 100%;
+  border: 1px solid #ccc;
+  outline: 0;
+  border-radius: 15px;
+  padding-right: 3em;
+  padding-left: 3em;
+  @include for-size(phone) {
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+}
+.search-box:focus {
+  box-shadow: 0 0 5px 2px #b0e0ee;
+  border: 0.5px solid #bebede;
+}
+.close-icon {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  outline: 0;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  right: 0em;
+}
+.search-icon {
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+  outline: 0;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0em;
+}
+.search-box:not(:valid) ~ .close-icon {
+  display: none;
+}
